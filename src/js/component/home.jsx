@@ -28,11 +28,12 @@ const Home = () => {
 			<header>
 				<Title title="María & Daniel" />
 				<ProgressBar progress={date} />
-				<HeaderImg
-					img={mariaDaniPiscina}
-					alt="Foto de portada, María y Dani en la piscina"
-				/>
 			</header>
+			<HeaderImg
+				img={mariaDaniPiscina}
+				alt="Foto de portada, María y Dani en la piscina"
+			/>
+			<section className></section>
 		</Fragment>
 		// <div className="text-center mt-5">
 		// 	<h1>Hello Rigo!</h1>
