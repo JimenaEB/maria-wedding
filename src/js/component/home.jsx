@@ -8,11 +8,26 @@ import mariaDaniPiscina from "../../img/7E2987B6-A8C7-4977-9EB2-07366C463764_1_1
 
 //create your first component
 const Home = () => {
+	const date = [
+		{
+			text: "Todo empezó un",
+			when: "21/05/2010"
+		},
+		{
+			text: "Sí quiero",
+			when: "30/10/2021"
+		},
+		{
+			text: "Para",
+			when: "siempre"
+		}
+	];
+
 	return (
 		<Fragment>
 			<header>
 				<Title title="María & Daniel" />
-				<ProgressBar />
+				<ProgressBar progress={date} />
 				<HeaderImg
 					img={mariaDaniPiscina}
 					alt="Foto de portada, María y Dani en la piscina"
