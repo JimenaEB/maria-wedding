@@ -1,25 +1,38 @@
-import React from "react";
+import React, { Fragment } from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import Title from "./title.jsx";
+import HeaderImg from "./headerImg.jsx";
+import ProgressBar from "./progressBar.jsx";
+
+import mariaDaniPiscina from "../../img/7E2987B6-A8C7-4977-9EB2-07366C463764_1_105_c.jpeg";
 
 //create your first component
 const Home = () => {
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
+		<Fragment>
+			<header>
+				<Title title="María & Daniel" />
+				<ProgressBar />
+				<HeaderImg
+					img={mariaDaniPiscina}
+					alt="Foto de portada, María y Dani en la piscina"
+				/>
+			</header>
+		</Fragment>
+		// <div className="text-center mt-5">
+		// 	<h1>Hello Rigo!</h1>
+		// 	<p>
+		// 		<img src={mariaDaniPiscina} />
+		// 	</p>
+		// 	<a href="#" className="btn btn-success">
+		// 		If you see this green button... bootstrap is working
+		// 	</a>
+		// 	<p>
+		// 		Made by{" "}
+		// 		<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
+		// 		love!
+		// 	</p>
+		// </div>
 	);
 };
 
