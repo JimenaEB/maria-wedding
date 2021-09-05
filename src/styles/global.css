@@ -1,0 +1,9 @@
+:root {
+  --primary-color: #b1ccfb;
+}
+
+header {
+  background-color: var(--primary-color);
+  height: 95vh;
+  display: flex;
+}
