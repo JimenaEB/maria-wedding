@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const HeaderImg = props => {
 	return (
-		<figure>
+		<figure className="header_figure">
 			<img className="header_img" src={props.img} alt={props.alt} />
 		</figure>
 	);

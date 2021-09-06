@@ -3,10 +3,11 @@ import React, { Fragment } from "react";
 import Title from "./title.jsx";
 import HeaderImg from "./headerImg.jsx";
 import ProgressBar from "./progressBar.jsx";
+import Countdown from "./countdown.jsx";
+import History from "./history.jsx";
 
 import mariaDaniPiscina from "../../img/7E2987B6-A8C7-4977-9EB2-07366C463764_1_105_c.jpeg";
 
-//create your first component
 const Home = () => {
 	const date = [
 		{
@@ -27,13 +28,14 @@ const Home = () => {
 		<Fragment>
 			<header>
 				<Title title="María & Daniel" />
+				<Countdown endDate={new Date(2021, 9, 30, 12)}></Countdown>
 				<ProgressBar progress={date} />
 			</header>
 			<HeaderImg
 				img={mariaDaniPiscina}
 				alt="Foto de portada, María y Dani en la piscina"
 			/>
-			<section className></section>
+			<History />
 		</Fragment>
 		// <div className="text-center mt-5">
 		// 	<h1>Hello Rigo!</h1>
