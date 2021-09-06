@@ -5,6 +5,7 @@ import HeaderImg from "./headerImg.jsx";
 import ProgressBar from "./progressBar.jsx";
 import Countdown from "./countdown.jsx";
 import History from "./history.jsx";
+import GForm from "./gform.jsx";
 
 import mariaDaniPiscina from "../../img/7E2987B6-A8C7-4977-9EB2-07366C463764_1_105_c.jpeg";
 import md1 from "../../img/C32B0FBE-213B-4460-94DC-2ABC984B365A_1_105_c.jpeg";
@@ -41,7 +42,9 @@ const Home = () => {
 				<ProgressBar progress={date} />
 				<HeaderImg />
 			</header>
+
 			<History img={images} text={text} />
+      <GForm></GForm>
 		</Fragment>
 		// <div className="text-center mt-5">
 		// 	<h1>Hello Rigo!</h1>
