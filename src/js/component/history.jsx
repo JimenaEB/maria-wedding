@@ -5,9 +5,11 @@ import Polaroid from "./polaroid.jsx";
 
 const History = props => {
 	return (
-		<section>
-			<p>{props.text[0]}</p>
-			<p>{props.text[1]}</p>
+		<section className="history">
+			<article className="history_text">
+				<p>{props.text[0]}</p>
+				<p>{props.text[1]}</p>
+			</article>
 			<Polaroid img={props.img} />
 		</section>
 	);

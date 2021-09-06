@@ -58,26 +58,6 @@ h1 {
     font-weight: 300;
 }
 
-.header_figure{
-    margin: 0;
-    position: absolute;
-    top: 0rem;
-    z-index: -1;
-    width: 100vw;
-    object-fit: cover;
-    object-position: 50% 0;
-    min-width: 1000px;
-}
-
-.header_img {
-    filter: brightness(150%) opacity(0.95);;
-    width: 100%;
-    z-index: -1;
-    object-fit: cover;
-    object-position: 50% 0;
-    min-width: 1000px;
-}
-
 .progress-bar {
     display: flex;
     justify-content: space-around;
@@ -151,6 +131,21 @@ h1 {
     top: -7rem;
     background-blend-mode: hard-light;
     background-color: white;
+}
+
+.history {
+    display: flex;
+    margin-top: -6rem;
+    padding: 0 6rem;
+
+    &_text {
+        width: 40%;
+
+        & > p {
+            font-family: $text-font;
+            font-size: 1.95rem;
+        }
+    }
 }
 
 @media only screen and (max-width: 800px) {

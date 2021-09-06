@@ -39,11 +39,7 @@ const Home = () => {
 				<Title title="María & Daniel" />
 				<Countdown endDate={new Date(2021, 9, 30, 12)}></Countdown>
 				<ProgressBar progress={date} />
-				<div className="prueba"></div>
-				{/* <HeaderImg
-					img={mariaDaniPiscina}
-					alt="Foto de portada, María y Dani en la piscina"
-				/> */}
+				<HeaderImg />
 			</header>
 			<History img={images} text={text} />
 		</Fragment>
