@@ -22,6 +22,10 @@ $text-font-bold: bellotaText-bold;
 $primary-color: #3F5A80;
 $light-color: #fff;
 
+#app{
+    display: grid;
+}
+
 .bold{
     font-family: $text-font-bold;
 }
@@ -137,7 +141,7 @@ h1 {
 }
 
 .prueba {
-    //padding-top: percentage(1200 / 100);
+    padding-top: 60rem;
     background-image: $header-image;
     background-repeat: no-repeat;
     background-position: center;
@@ -150,24 +154,13 @@ h1 {
 }
 
 @media only screen and (max-width: 800px) {
-    header {
-        height: 100vh;
-        overflow: hidden;
+    .prueba {
+        padding-top: 50%;
+
     }
 }
 
 @media only screen and (max-width: 500px){
-    header {
-        height: calc(100vh - 10vh);
-        overflow: hidden;
-    }
-
-    // .prueba {
-    //     top: calc(100vh - 70rem);
-    //     background-size: contain;
-    //     height: 100vh;
-    // }
-
     .progress-bar {
         margin: 1rem 0;
 
