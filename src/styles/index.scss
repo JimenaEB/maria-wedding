@@ -103,7 +103,6 @@ h1 {
     color: $light-color;
     font-size: 4rem;
     padding: 3rem 0;
-    flex-wrap: wrap;
     gap: 1.5rem;
     width: 100%;
     font-family: $text-font-bold;
@@ -137,7 +136,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     margin-top: -6rem;
-    padding: 0 6rem;
+    padding: 0 3rem;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 2rem;
@@ -182,6 +181,14 @@ h1 {
         padding-top: 50%;
 
     }
+
+    .history {
+        padding: 0 2rem;
+    
+        &_text {
+            width: 100%;
+        }
+    }
 }
 
 @media only screen and (max-width: 500px){
@@ -214,6 +221,12 @@ h1 {
             font-size: 1.2rem;
             padding: 1rem 0 0;
         }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .countdown {
+        gap: 0;
     }
 }
 
