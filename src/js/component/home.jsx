@@ -44,7 +44,7 @@ const Home = () => {
 			</header>
 
 			<History img={images} text={text} />
-      <GForm></GForm>
+			<GForm></GForm>
 		</Fragment>
 		// <div className="text-center mt-5">
 		// 	<h1>Hello Rigo!</h1>
