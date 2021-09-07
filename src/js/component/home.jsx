@@ -32,11 +32,11 @@ const Home = () => {
 	];
 	const images = [md1, md2, md3];
 	const textHistory = [
-		"Dani y María se conocieron en el colegio Sagrado Corazón HH. Maristas dónde estudiaron juntos muchos años.",
+		"Dani y María se conocieron en el colegio Sagrado Corazón HH. Maristas, dónde estudiaron juntos muchos años.",
 		"No fue hasta que coincidieron en Bachiller, en el aula C, que empezó su historia y, aún así, se hicieron de rogar hasta el último día de curso..."
 	];
-	const place = "";
-	const lunch = "";
+	const place = "https://goo.gl/maps/BWmdWBiPvL34BPxL6";
+	const lunch = "https://goo.gl/maps/mKJ7LeQ5ZcemNkXj9";
 
 	return (
 		<Fragment>
