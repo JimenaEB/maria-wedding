@@ -1,7 +1,7 @@
 import React from "react";
 
 const HeaderImg = () => {
-	return <div className="prueba"></div>;
+	return <div className="headerImg"></div>;
 };
 
 export default HeaderImg;
