@@ -20,6 +20,7 @@ $text-font: bellotaText-regular;
 $text-font-bold: bellotaText-bold;
 
 $primary-color: #3F5A80;
+$secondary-color: #E4EAF2;
 $light-color: #fff;
 
 #app{
@@ -56,6 +57,24 @@ h1 {
     margin: 0;
     padding: 1rem 0;
     font-weight: 300;
+}
+
+h2 {
+    font-family: $primary-font;
+    color: $primary-color;
+    text-align: center;
+    margin: 0;
+    font-size: 3rem;
+    padding-top: 1.5rem;
+    background-color: $secondary-color;
+}
+
+.right {
+    flex-direction: row-reverse;
+}
+
+.left {
+    flex-direction: row;
 }
 
 .progress-bar {
@@ -174,17 +193,32 @@ h1 {
 .gform {
     display: flex;
     justify-content: center;
+    margin-top: 1rem
+}
+
+.ceremony {
+    padding: 2rem 3rem;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: $secondary-color;
+    justify-content: space-between;
+
+    & > img {
+        width: 55%;
+        border-radius: .25rem;
+    }
 }
 
 @media only screen and (max-width: 800px) {
+    
     .headerImg {
         padding-top: 50%;
-
+        
     }
-
+    
     .history {
         padding: 0 2rem;
-    
+        
         &_text {
             width: 100%;
         }
@@ -192,6 +226,10 @@ h1 {
 }
 
 @media only screen and (max-width: 500px){
+    header {
+        height: 80%;
+    }
+
     .progress-bar {
         margin: 1rem 0;
 

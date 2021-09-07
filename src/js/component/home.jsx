@@ -6,14 +6,17 @@ import ProgressBar from "./progressBar.jsx";
 import Countdown from "./countdown.jsx";
 import History from "./history.jsx";
 import GForm from "./gform.jsx";
+import Ceremony from "./ceremony.jsx";
 
-import mariaDaniPiscina from "../../img/7E2987B6-A8C7-4977-9EB2-07366C463764_1_105_c.jpeg";
 import md1 from "../../img/C32B0FBE-213B-4460-94DC-2ABC984B365A_1_105_c.jpeg";
 import md2 from "../../img/D405D16C-6E3A-423A-8D57-6A1F27E2F9FE_1_105_c.jpeg";
 import md3 from "../../img/EAFB1781-2511-4AB1-8A02-39E920D338EE_1_105_c.jpeg";
+import chapel from "../../img/image.png";
+import hotel from "../../img/where.png";
 
 const Home = () => {
-	const date = [
+	const weddingDate = new Date(2021, 9, 30, 12);
+	const dates = [
 		{
 			text: "Todo empezó",
 			when: "21/05/2010"
@@ -27,24 +30,27 @@ const Home = () => {
 			when: "siempre"
 		}
 	];
-
 	const images = [md1, md2, md3];
-	const text = [
+	const textHistory = [
 		"Dani y María se conocieron en el colegio Sagrado Corazón HH. Maristas dónde estudiaron juntos muchos años.",
 		"No fue hasta que coincidieron en Bachiller, en el aula C, que empezó su historia y, aún así, se hicieron de rogar hasta el último día de curso..."
 	];
+	const place = "";
+	const lunch = "";
 
 	return (
 		<Fragment>
 			<header>
 				<Title title="María & Daniel" />
-				<Countdown endDate={new Date(2021, 9, 30, 12)}></Countdown>
-				<ProgressBar progress={date} />
+				<Countdown endDate={weddingDate}></Countdown>
+				<ProgressBar progress={dates} />
 				<HeaderImg />
 			</header>
-
-			<History img={images} text={text} />
-			<GForm></GForm>
+			<History img={images} text={textHistory} />
+			<h2>La ceremonia</h2>
+			<Ceremony disposition="right" text={place} img={chapel} />
+			<Ceremony disposition="left" text={lunch} img={hotel} />
+			<GForm />
 		</Fragment>
 	);
 };
