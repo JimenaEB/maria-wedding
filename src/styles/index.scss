@@ -31,6 +31,10 @@ $light-color: #fff;
     font-family: $text-font-bold;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     width: 100vw;
@@ -202,6 +206,28 @@ h2 {
     flex-wrap: nowrap;
     background-color: $secondary-color;
     justify-content: space-between;
+    align-items: center;
+    font-family: $text-font;
+
+    &_text {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        font-size: 1.7rem;
+        
+    }
+
+    &_button {
+        padding: .5rem;
+        width: 100%;
+        font-family: $text-font-bold;
+        font-size: 1.15rem;
+        border: none;
+        color: $light-color;
+        background-color: $primary-color;
+        cursor: pointer;
+        border-radius: .25rem;
+    }
 
     & > img {
         width: 55%;
