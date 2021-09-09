@@ -198,6 +198,16 @@ h2 {
     display: flex;
     justify-content: center;
     margin: 1rem 0;
+    & > iframe {
+        height: 1400px;
+        width: 100%;
+        frameBorder: 0;
+        marginHeight: 0;
+        marginWidth: 0;
+        border: none;
+        overflow-y: visible;
+
+    }
 }
 
 .ceremony {
@@ -246,15 +256,15 @@ h2 {
 }
 
 @media only screen and (max-width: 800px) {
-    
+
     .headerImg {
         padding-top: 50%;
-        
+
     }
-    
+
     .history {
         padding: 0 2rem;
-        
+
         &_text {
             width: 100%;
         }
@@ -303,6 +313,10 @@ h2 {
             font-size: 1.2rem;
             padding: 1rem 0 0;
         }
+    }
+
+    .gform iframe {
+        height: 1580px;
     }
 }
 
