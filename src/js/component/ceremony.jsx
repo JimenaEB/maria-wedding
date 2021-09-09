@@ -42,7 +42,7 @@ const Ceremony = props => {
 			setText(
 				<article className="ceremony_text">
 					<p>
-						El banquete y fiesta serán en la
+						El banquete y la fiesta serán en la
 						<span className="bold"> Finca Torre Bosch </span>
 					</p>
 					<p>

@@ -14,6 +14,7 @@
 }
 
 $header-image: url(../img/7E2987B6-A8C7-4977-9EB2-07366C463764_1_105_c.jpeg);
+$footer-image: url(../img/myd.jpg);
 
 $primary-font: sail;
 $text-font: bellotaText-regular;
@@ -245,6 +246,26 @@ h2 {
     }
 }
 
+.present {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $secondary-color;
+    font-family: $text-font;
+    font-size: 1.5rem;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    justify-content: space-evenly;
+
+    & > .polaroid {
+        width: 35%;
+    }
+
+
+    & > p {
+        width: 40%;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     .history_text > p {
         font-size: 1.5rem;
@@ -258,8 +279,7 @@ h2 {
 @media only screen and (max-width: 800px) {
 
     .headerImg {
-        padding-top: 50%;
-
+        padding-top: 80%;
     }
 
     .history {
@@ -317,6 +337,12 @@ h2 {
 
     .gform iframe {
         height: 1580px;
+    }
+
+    .present {
+        & > p, & .polaroid {
+            width: 100%;
+        } 
     }
 }
 
