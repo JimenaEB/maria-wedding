@@ -10,11 +10,12 @@ const Present = props => {
 			</figure>
 			<article>
 				<p>
-					Lo más importante es poder contar con vuestra presencia y
-					poder compartir con vosotros el próximo 30 de Octubre, pero,
-					si estáis pensando en hacernos un regalo, lo que más ilusión
-					nos haría es que colaboráseis con nuestra{" "}
-					<span className="strong">Luna de Miel</span>.
+					Nos hace mucha ilusión compartir con vosotros nuestra boda
+					el próximo 30 de octubre, ése es el mejor regalo que podéis
+					hacernos. Pero si además queréis ayudarnos con nuestro viaje
+					de <span className="strong">Luna de Miel</span>, os pasamos
+					un número de cuenta para que podáis hacerlo. ¡Muchas gracias
+					de antemano y esperamos veros a todos muy pronto!
 				</p>
 				<p>
 					Nuestro número de cuenta es: ES24 0182 1294 1502 0690 6805
