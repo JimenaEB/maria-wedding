@@ -260,6 +260,9 @@ h2 {
         width: 35%;
     }
 
+    & > article {
+      width: 40%;
+    }
 
     & > p {
         width: 40%;
@@ -291,11 +294,15 @@ h2 {
     }
 
     .ceremony {
-       flex-wrap: wrap; 
+       flex-wrap: wrap;
 
-       &_text, & > img {
-           width: 100%;
-       }
+        &_text, & > img {
+            width: 100%;
+        }
+    }
+
+    .present > article {
+        width: 100%;
     }
 }
 
