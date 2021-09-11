@@ -15,6 +15,9 @@ const Present = props => {
 				que colaboráseis con nuestra{" "}
 				<span className="strong">Luna de Miel</span>.
 			</p>
+			<p>
+				Nuestro número de cuenta es: ES24 0182 1294 1502 0690 6805
+			</p>
 		</section>
 	);
 };
