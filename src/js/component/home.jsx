@@ -8,13 +8,15 @@ import History from "./history.jsx";
 import GForm from "./gform.jsx";
 import Ceremony from "./ceremony.jsx";
 import Present from "./present.jsx";
+import Hotel from "./hotel.jsx";
 
 import md1 from "../../img/C32B0FBE-213B-4460-94DC-2ABC984B365A_1_105_c.jpeg";
 import md2 from "../../img/D405D16C-6E3A-423A-8D57-6A1F27E2F9FE_1_105_c.jpeg";
 import md3 from "../../img/EAFB1781-2511-4AB1-8A02-39E920D338EE_1_105_c.jpeg";
 import chapel from "../../img/image.png";
-import hotel from "../../img/where.png";
+import place from "../../img/where.png";
 import travel from "../../img/myd.jpg";
+import hotel_img from "../../img/hotel.jpg";
 
 const Home = () => {
 	const weddingDate = new Date(2021, 9, 30, 12);
@@ -51,7 +53,8 @@ const Home = () => {
 			<History img={images} text={textHistory} />
 			<h2>La ceremonia</h2>
 			<Ceremony disposition="right" text={place} img={chapel} />
-			<Ceremony disposition="left" text={lunch} img={hotel} />
+			<Ceremony disposition="left" text={lunch} img={place} />
+			<Hotel img={hotel_img} />
 			<GForm />
 			<Present img={travel} />
 		</Fragment>
